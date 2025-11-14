@@ -1,0 +1,23 @@
+Пакеты и зачем они
+
+- tailwindcss (dev-dep): сам фреймворк утилитарных классов.
+
+- postcss (dev-dep): процессор CSS, через него Tailwind «разворачивает» директивы в реальные стили.
+
+- autoprefixer (dev-dep): PostCSS-плагин, добавляет в CSS вендорные префиксы под нужные браузеры.
+
+- daisyui (runtime dep): готовые Tailwind-компоненты/темы (кнопки, карточки, переключатель темы и т.п.).
+
+- @angular/material (runtime dep): точечно для диалогов и снекбаров (не перегружаем проект компонентами, остальное — Tailwind+DaisyUI).
+
+- eslint (dev): статический анализ TS/JS/HTML-темплейтов (через плагины).
+
+- prettier (dev): единый авто-формат кода (без споров о стилях).
+
+- @angular-eslint/schematics (dev): набор правил ESLint под Angular (шаблоны, компоненты, привязки и т.д.).
+
+- husky (dev): git-хуки (выполнит команды перед коммитом/пушем).
+
+- lint-staged (dev): запускает формат/линт только для изменённых файлов, быстро.
+
+- @commitlint/cli + @commitlint/config-conventional (dev): проверка сообщений коммитов по Conventional Commits (тип: scope: сообщение).
